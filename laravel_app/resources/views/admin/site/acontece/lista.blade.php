@@ -1,0 +1,89 @@
+@extends('layouts.admin')
+
+@section('estilo')
+  <!-- summernote -->
+  <link rel="stylesheet" href="{{asset('admin/plugins/summernote/summernote-bs4.css')}}">
+@endsection
+
+
+@section('conteudo')
+
+<!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+            <div class="col-12">
+                <a href="{{route('admin_site_acontece_form',0)}}" class="btn btn-primary btn-block mt-3">Novo Acontece</a>
+            </div>
+            <div class="col-12">
+            <div class="card card-primary  mt-3">
+                <div class="card-header">
+                  <h3 class="card-title">Acontece cadastrados</h3>
+                </div>
+                <!-- /.card-header -->
+                <table class="table table-hover text-nowrap">
+                    <thead>
+                      <tr>
+                        <th>Titulo</th>
+                        <th>Categoria</th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @foreach ($listas as $acontece)
+                          <tr>
+                              <tr>
+                                  <td>{{$acontece->titulo}}</td>
+                                  <td>{{$acontece->categoria->nome}}</td>
+                                  <th>{{$acontece->fotos->count()}} fotos</th>
+                                  <th><a href="{{route('admin_site_acontece_form',$acontece->id)}}" class="btn btn-primary">Editar</a></th>
+                                  <th><a href="{{route('acontece_form_del',$acontece->id)}}" class="btn btn-danger">Excluir</a></th>
+                              </tr>
+                          </tr>
+                      @endforeach
+                    </tbody>
+                  </table>
+              </div></div>
+ 
+
+
+
+         
+              
+
+
+              
+            
+
+
+
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+
+ 
+
+        </div>
+
+        
+      </div> 
+    </section>
+
+@endsection
+
+@section('scripts')
+<!-- Summernote   -->
+<script src="{{ asset('admin/plugins/summernote/summernote-bs4.min.js')}}"></script>
+
+<script>
+    $(function () {
+        $('#texto').summernote();
+    });
+</script>
+
+
+@endsection
