@@ -57,7 +57,7 @@
     </div>
     <div class="col-md-4 d-flex flex-column justify-content-center">
  
-        <img src="{{asset('img/home/bercario_3.png')}}" alt="" class="img-fluid">
+        <img src="{{asset('img/home/bercario_4.jpg')}}" alt="" class="img-fluid">
      </div>
     </div>
     </div>

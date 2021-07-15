@@ -47,7 +47,11 @@
                 <td><p> Birra: como lidar com ela? </p></td>
                 <td>  <i class="fas fa-download"></i> </td>
             </tr>
-
+            <tr data-href="{{route('paciencia')}}" style="cursor: pointer;">
+                
+                <td><p> Paciência: uma habilidade que você vai precisar ajudar seu filho a desenvolver </p></td>
+                <td>  <i class="fas fa-globe"></i></td>
+            </tr>
 
         </table>
                 

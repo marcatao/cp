@@ -3,6 +3,8 @@
 
 Auth::routes();
 
+  
+
 Route::get('/', 'SiteController@index')->name('index');
 Route::get('/colegio', 'SiteController@colegio_paraiso')->name('colegio_paraiso');
 Route::get('/estrutura', 'SiteController@estrutura')->name('estrutura');
@@ -61,12 +63,15 @@ Route::get('/app/site/categorias/{id}', 'AdminController@admin_site_categorias_d
 Route::get('/app/site/acontece', 'AdminController@admin_site_acontece')->name('admin_site_acontece');
 Route::get('/app/site/acontece_form/{id}', 'AdminController@admin_site_acontece_form')->name('admin_site_acontece_form');
 Route::post('/app/site/acontece_form/{id}', 'AdminController@admin_site_acontece_save')->name('admin_site_acontece_form');
+Route::post('/app/site/acontece_form_image/{id}', 'AdminController@admin_site_acontece_save_image')->name('admin_site_acontece_form_image');
 Route::get('/app/site/acontece_form_del/{id}', 'AdminController@acontece_form_del')->name('acontece_form_del');
+Route::get('/app/site/publicar_postagem/{id}', 'AdminController@publicar_postagem')->name('publicar_acontece');
 
 Route::get('/app/site/admin_site_acontece_del_imagem/{id}', 'AdminController@admin_site_acontece_del_imagem')->name('admin_site_acontece_del_imagem');
 Route::get('/app/site/admin_site_acontece_capa_imagem/{acontece}/{imagem}', 'AdminController@admin_site_acontece_capa_imagem')->name('admin_site_acontece_capa_imagem');
 
 
+Route::get('informativos/paciencia', 'SiteController@paciencia')->name('paciencia');
 
 Route::get('questionario/', 'PesquisaController@index')->name('index_questionario');
 Route::post('questionario/save', 'PesquisaController@store')->name('index_store');
@@ -77,3 +82,12 @@ Route::get('questionario/obrigado', 'PesquisaController@obrigado')->name('obriga
 Route::get('questionario/mail/{id}', 'PesquisaController@mail_send')->name('mail');
 
 Route::get('questionario/excell/{id}', 'PesquisaController@excell')->name('excell');
+
+
+Route::get('trabalhe_conosco', 'SiteController@trabalhe_conosco')->name('trabalhe_conosco');
+Route::post('trabalhe_conosco', 'SiteController@trabalhe_conosco_send')->name('trabalhe_conosco');
+
+
+
+Route::post('/app/site/admin_site_estrutura_tipo', 'AdminController@admin_site_estrutura_tipo')->name('admin_site_estrutura_tipo');
+Route::get('/app/site/admin_site_estrutura_tipo_del/{id}', 'AdminController@admin_site_estrutura_tipo_del')->name('admin_site_estrutura_tipo_del');

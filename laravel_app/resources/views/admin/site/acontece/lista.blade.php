@@ -25,8 +25,10 @@
                 <table class="table table-hover text-nowrap">
                     <thead>
                       <tr>
+                        <th></th>
                         <th>Titulo</th>
                         <th>Categoria</th>
+                        <th>Status</th>
                         <th></th>
                         <th></th>
                       </tr>
@@ -35,8 +37,22 @@
                       @foreach ($listas as $acontece)
                           <tr>
                               <tr>
+                                <td>
+                                @if ($acontece->img_capa)
+                                   <img src="{{asset($acontece->img_capa->src)}}" class="img-fluid" width="150px">
+                                @else
+                                <img src="{{asset('img/acontece/noimage.png')}}" class="img-fluid"  width="150px">
+                                @endif
+                               </td>
                                   <td>{{$acontece->titulo}}</td>
                                   <td>{{$acontece->categoria->nome}}</td>
+                                  <td>
+                                    @if($acontece->status == 0)
+                                    Publicado
+                                    @else
+                                    <b class="text-danger">Rascunho</b>
+                                    @endif
+                                    
                                   <th>{{$acontece->fotos->count()}} fotos</th>
                                   <th><a href="{{route('admin_site_acontece_form',$acontece->id)}}" class="btn btn-primary">Editar</a></th>
                                   <th><a href="{{route('acontece_form_del',$acontece->id)}}" class="btn btn-danger">Excluir</a></th>

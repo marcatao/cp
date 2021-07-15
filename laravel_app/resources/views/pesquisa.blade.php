@@ -7,7 +7,7 @@
 <section class=" text-center mt-5">
   <div class="container">
   
-  <p><img src="https://www.colegioparaisosbc.com.br/questionario/img/banner_desafio_2021_fase2.jpg" alt="Banner Concurso de Bolsas 2021" ></p>
+  
   
     <h1>Concurso de Bolsas 2021</h1>
     <p class="lead text-muted">Sua chance de estar entre os melhores!</p>

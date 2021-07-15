@@ -59,7 +59,7 @@
             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
             <div class="media-body">
                 <h3>(11) 4332-8333</h3>
-                <p>Segunda a quinta,<br>das 8h as 18h</p>
+                <p>Segunda a sexta,<br>das 8h as 18h</p>
             </div>
         </div>
         <div class="media contact-info">

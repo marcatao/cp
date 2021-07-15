@@ -1,7 +1,7 @@
 
 <header>
     <!-- Header Start -->
-    <div class="header-area header-transparent bg-green">
+    <div class="header-area header-transparent bg-green" id="top-menu">
 
 
         <div class="menu-wrapper ">
@@ -68,12 +68,19 @@
                                 <li><a href="{{route('index')}}">Institucional</i></a>
                                     <ul class="submenu">
                                         <li><a href="{{route('colegio_paraiso')}}">Colégio Paraiso</a></li>
-                                        <li><a href="{{route('estrutura')}}">Nossa Estrutura</a></li>
+                                        <!-- <li><a href="{{route('estrutura')}}">Nossa Estrutura</a></li>-->
 										<li><a href="{{route('depoimentos')}}">Depoimentos</a></li>
 										
                                         <!-- <li><a href="{{asset('pdfs/normas_escolares_2019.pdf')}}" target="_blank">Normas Internas</a></li> -->
                                         <!--<li><a href="{{route('index')}}#parceiros">Parceiros</a></li>-->
                                         <li><a href="{{route('index')}}#localizacao">Localização</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Nossa Estrutura</i></a>
+                                    <ul class="submenu">
+                                        @foreach (\App\estrutura_tipo::all() as $es)
+                                        <li><a href="{{route('estrutura')}}?id={{ $es->id }}">{{ $es->titulo }}</a></li>
+                                        @endforeach
                                     </ul>
                                 </li>
                                 <li><a href="{{route('index')}}#educacional">Educacional</i></a>
@@ -107,6 +114,8 @@
                                 </ul>
                                 </li>
                                 <li><a href="{{route('index')}}#contato">Contato</a></li>
+                                <li><a href="{{route('trabalhe_conosco')}}">Trabalhe Conosco</a></li>
+                                
                                 <li class="d-block d-sm-none"><a href="http://paraiso.dyndns.info:8010/sg_web/acesso.aspx?escola=3111"> Portal do Aluno</a></li>
                                 <li class="d-block d-sm-none"><a href="https://unoieducacao.com/plataformas/familia"> UNO Educacional</a></li>
                             </ul>

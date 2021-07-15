@@ -104,6 +104,22 @@
 <p><b>Tratar com Rosana e Nagib</b></p>
 <div class="pt-5 pb-5 white-bg"></div>
 </div>
+
+<div class="row">
+    <div class="col-md-12 text-center mb-4">
+       <h1>Almoço</h1>    
+    </div>
+</div>
+<div class="container white-bg">
+<p>O Colégio Paraíso oferece almoço para os alunos do período integral com sistema self-service. Caso o aluno não seja do período integral e necessite almoçar no colégio, para a realização de treinos ou apoio pedagógico, o responsável deverá comunicar à secretaria até às 10h do dia, para melhor organização da cozinha.
+<p>Caso haja interesse, entre em contato com a secretária:</p>
+<p><b>Tel.: (11) 4332-8333  </b><br></p>
+</p>
+ 
+<div class="pt-5 pb-5 white-bg"></div>
+</div>
+
+
 </section>
 
  

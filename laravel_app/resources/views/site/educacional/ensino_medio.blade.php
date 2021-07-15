@@ -26,8 +26,8 @@
                 Com este objetivo o currículo do Ensino Médio procura estruturar o conhecimento para que o aluno adquira as
                 competências necessárias, não só para prestar o vestibular, mas também para os desafios do Mercado de Trabalho, as
                 situações de competição e o exercício consciente da cidadania.</p>
-           <h5>DESENVOLVER O POTENCIAL DO ALUNO NOS CAMPOS DAS CIÊNCIAS DA NATUREZA; CIÊNCIAS HUMANAS;
-            MATEMÁTICA E SUAS TECNOLOGIAS; LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS.</h5>
+           <h5>DESENVOLVER O POTENCIAL DO ALUNO NOS CAMPOS DAS CIÊNCIAS DA NATUREZA, CIÊNCIAS HUMANAS,
+            MATEMÁTICA E SUAS TECNOLOGIAS, LINGUAGENS, CÓDIGOS E SUAS TECNOLOGIAS.</h5>
             <p>O aluno no Colégio Paraíso é visto como, além de uma pessoa preparando-se para o futuro, alguém que vive o presente e
                 precisa aprender a vencer desafios, situações conflitivas, trabalhar o relacionamento interpessoal, na escola e fora dela.
                 A escola propõe espaços de debates e orientação sobre a aquisição de competências.</p>

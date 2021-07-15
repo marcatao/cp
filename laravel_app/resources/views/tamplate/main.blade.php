@@ -9,11 +9,11 @@
     <div class="white_menu" id="navbarHeader">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3 col-md-4 py-4">
-            <img src="{{asset('img/logo.png')}}" class="img-fluid">            
+          <div class="col-sm-2 col-md-4 py-4">
+            <img src="{{asset('img/logo/Logo-ColegioParaiso.png')}}" class="img-fluid">            
           </div>
           <div class="col-md-5 py-4">
-            <img src="https://www.colegioparaisosbc.com.br/Imagens/19-07_banner_fone.jpg" class="img-fluid">   
+ 
           </div>
           <div class="col-sm-3 py-4">
             <h4 class="">Redes Sociais</h4>

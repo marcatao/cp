@@ -20,15 +20,24 @@
 
          <div class="col-md-4 mt-3 mb-5">
             <div class="blog-entry">
+              @if ($post->img_capa)
               <a href="{{route($post->link)}}" class="block-20 d-flex align-items-end" style="background-image: url({{asset($post->img_capa->src)}});">
+              @else
+              <a href="{{route($post->link)}}" class="block-20 d-flex align-items-end" style="background-image: url({{asset('img/acontece/noimage.png')}});">
+              @endif
 								<div class="meta-date text-center p-2">
                   <span class="day">{{$dt->format('d')}}</span>
                   <span class="mos">{{$dt->format('m')}}</span>
                   <span class="yr">{{$dt->format('y')}}</span>
                 </div>
               </a>
-              <div class="text bg-white p-4">
-                <h5 class="heading"><a href="{{route($post->link)}}">{{$post->titulo}}</a></h5>
+              <div class="text bg-white p-4 ">
+                <h5 class="heading titulo-acontece">
+                  <a href="{{route($post->link)}}">
+                    {{$post->titulo}}
+
+                  </a>
+                </h5>
                    <div class="d-flex align-items-center mt-4">
 	               <a href="{{route($post->link)}}" class="btn btn3 btn-block">{{$post->categoria->nome}}</a></p>
  

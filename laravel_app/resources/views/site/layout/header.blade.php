@@ -29,7 +29,10 @@
     <link rel="stylesheet" href="{{asset('css/nice-select.css')}}">
 
 
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style2.css')}}">
+
+    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
+    
 </head>
 
 <body class="body-bg">
